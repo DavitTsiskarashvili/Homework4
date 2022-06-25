@@ -7,5 +7,9 @@
     <color name="teal_700">#114A4A</color>
     <color name="black">#FF000000</color>
     <color name="white">#A3A0A0</color>
-
+    <color name="darkGrey">#22343C</color>
+    <color name="textColor1">#96A7AF</color>
+    <color name="gradient1">#22343C</color>
+    <color name="gradient2">#1F2E35</color>
+    <color name="textColor2">#FFFFFF</color>
 </resources>

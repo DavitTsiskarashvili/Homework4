@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_rectangle_background"
-    tools:context=".MainActivity">
+    android:background="@drawable/gradient"
+        tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/rectangleTop"
@@ -18,17 +18,23 @@
         app:srcCompat="@drawable/ic_rectangle_copy_4"
         tools:layout_editor_absoluteX="26dp" />
 
-    <ImageView
+    <TextView
         android:id="@+id/hello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:text="Hello!"
+        android:fontFamily="@font/sfrPro"
+        android:textColor="@color/textColor2"
+        android:background="@null"
+        android:textSize="40sp"
+        android:textStyle="bold"
         android:layout_marginTop="210dp"
         android:layout_marginStart="32dp"
         app:srcCompat="@drawable/ic_heading" />
 
-    <ImageView
+    <TextView
         android:id="@+id/letsIntroduce"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,6 +42,11 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="272dp"
         android:layout_marginStart="32dp"
+        android:text="Let's Introduce"
+        android:fontFamily="@font/sfrPro"
+        android:textSize="20sp"
+        android:textColor="@color/textColor1"
+        android:background="@null"
         app:srcCompat="@drawable/ic_lets_introduce"
         tools:layout_editor_absoluteX="29dp"
         tools:layout_editor_absoluteY="224dp" />
@@ -52,29 +63,29 @@
         tools:layout_editor_absoluteX="19dp"
         tools:layout_editor_absoluteY="244dp" />
 
-    <ImageView
+    <EditText
         android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_field"
+        android:layout_width="321dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="336dp"
+        android:background="@null"
+        android:hint="Your full name"
+        android:inputType="text"
+        android:textColorHint="@color/textColor1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="350dp"
-        android:layout_marginStart="88dp"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="244dp" />
+        app:srcCompat="@drawable/ic_field" />
 
     <ImageView
         android:id="@+id/line1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_line"
+        android:layout_width="321dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="390dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="390dp"
-        android:layout_marginStart="88dp"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="244dp" />
+        app:srcCompat="@drawable/ic_line" />
 
 
     <ImageView
@@ -90,55 +101,50 @@
         tools:layout_editor_absoluteY="244dp" />
 
 
-    <ImageView
+    <EditText
         android:id="@+id/username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_username"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="443dp"
+        android:layout_width="320dp"
+        android:layout_height="46dp"
         android:layout_marginStart="88dp"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="244dp" />
-
+        android:layout_marginTop="428dp"
+        android:background="@null"
+        android:hint="Username"
+        android:inputType="text"
+        android:textColorHint="@color/textColor1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/line2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_line"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="482dp"
+        android:layout_width="323dp"
+        android:layout_height="3dp"
         android:layout_marginStart="88dp"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="244dp" />
+        android:layout_marginTop="482dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_line" />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/backButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_back_button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="548dp"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
         android:layout_marginStart="30dp"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="244dp" />
-
-    <ImageView
-        android:id="@+id/nextButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_next_button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="548dp"
-        android:layout_marginStart="100dp"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="244dp" />
+        android:background="@drawable/ic_back_button"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nextButton"
+        android:layout_width="283dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="548dp"
+        android:background="@drawable/ic_next_button"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
